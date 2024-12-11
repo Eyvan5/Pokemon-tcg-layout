@@ -34,7 +34,7 @@ ul {
 }
 .menu-sobres {
     height: 37.17719568567026vh;
-    width: 329.9px;
+    width: 100%;
     background-color: rgba(205,176,254,255);
     padding: 0.625rem;
     border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
