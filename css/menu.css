@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    font-family: nunito;
+}
+main {
+    aspect-ratio: 9/16;
+    background-color: var(--white);
+    height: 100vh;
+    padding: 0px;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+.main {
+    height: 74%;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.313rem;
+    padding-top: 1vh;
+    margin: auto;
+    position: relative;   
+}
+.menu-sobres {
+    height: 37.17719568567026vh;
+    width: 100%;
+    background-color: rgba(205,176,254,255);
+    padding: 0.625rem;
+    border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.menu-sobres::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 115%;
+    height: 16.949152542372882vh;
+    background-color: var(--white);
+    transform: rotate(-10deg);
+    transform-origin: left;
+    z-index: -1;
+}
+.timer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 45%;
+    width: 7.5rem;
+    height: 2rem;
+    background-color: var(--white);
+    border-radius: 200px;
+    z-index: 2;
+    overflow: hidden;
+}
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7.25rem;
+    height: 1.688rem;
+    border-radius: 1.875rem;
+    box-shadow: inset 1px 1px 3px rgba(181,190,199,255);
+}
+.ul-sobres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0.625rem;
+}
+.timer-bar {
+    position: relative;
+    background-color: var(--white);
+    border: 1px rgba(222,232,240,255) ridge;
+    box-shadow: inset 0px 1px 3px rgba(181,190,199,255),inset 20px 0px rgba(252,205,230,255);
+    height: 0.625rem;
+    width: 5rem;
+    border-radius: 0.625rem;
+}
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.625rem;
+    width: 4.375rem;
+}
+.timer-logo {
+    position: relative;
+    height: 0.875rem;
+    top: -0.313rem;
+    left: 0.625rem;
+}
+.reloj {
+    margin-top: 0.4vh;
+    margin-left: 0.6vw;
+    height: 1.5vh;
+}
+span{
+    font-size: 0.563rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-top: 0.25rem;
+}
+.li-sobres {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.sobres {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    margin: 1vh;
+}
+.sobre {
+    flex: 1;
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+    filter: drop-shadow(8px 6px 3px rgba(75, 75, 75, 0.400));
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 18.8vh;
+    width: 100%;
+    margin-top: 1.875rem;
+    position: relative;
+}
+.eleccion-magica {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 48%;
+    padding-top: 0.625rem;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(244,220,204,255);
+    border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.eleccion-magica::before ,.Tienda::before{
+    content: "";
+    position: absolute;
+    top: 64%;
+    left: 0;
+    width: 110%;
+    height: 15vh;
+    background-color: var(--white);
+    transform: rotate(-10deg);
+    transform-origin: left;
+    z-index: -1;
+}
+.energias {
+    width: 6.063rem;
+    height: 1.063rem;
+    padding-left: 0.125rem;
+    background-color: var(--white);
+    box-shadow: inset 1px 1px 3px rgba(206,220,233,255);
+    border-radius: 1.875rem;
+}
+.energia-magica {
+    margin-top: 0.125rem;
+    height: 0.938rem;
+}
+.eleccion-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 3.313rem;
+    bottom: -5%;
+    padding-top: 0.063rem;
+    z-index:2;
+    background-color: var(--text-color);
+    color: var(--white);
+    border-radius: 1.25rem;
+    width: 3.75rem;
+    height: 0.625rem;
+    font-size: 0.5rem;
+}
+.reloj2 {
+    height: 0.594rem;
+}
+.Tienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 48%;
+    background-color: rgba(204,220,239,255);
+    border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
+    box-shadow: var(--shadow);
+}
+p {
+    text-wrap: nowrap;
+    color: var(--text-color);
+    font-size: 0.688rem;
+    font-weight: 700;
+}
+.menu-misiones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 0.188rem;
+    height: 6.7vh;
+    aspect-ratio: 1/1;
+    background-color: rgba(65,229,195,255);
+    border-radius: 5.625rem;
+    margin-top: 0.625rem;
+    margin-left: 88%;
+    padding-top: 0.5rem;
+    box-shadow: var(--shadow);
+}
+.menu-misiones::before {
+    content: "";
+    position: absolute;
+    height: 0.625rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.25rem;
+    right: 1px;
+    top: 0.063rem;
+    background-color: var(--red);
+}
+.mision-logo {
+    height: 4.6vh;
+}
+.misiones-texto {
+    font-weight: 900;
+    font-size: 0.5rem;
+}
+.menu-logo {
+    height: 10vh;
+    aspect-ratio: 1/1;
+}
+.m-logo {
+    height: 10vh;
+    aspect-ratio: 1/1;
+}
+.footer-box {
+    background-color: var(--white);
+    box-shadow:0px -1px 10px rgb(255, 255, 255);
+    padding-top: 0.313rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.footer-a {
+    height: 4.298vh;
+}
+.footer-item {
+    height: 4.298vh;
+}

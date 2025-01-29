@@ -1,0 +1,10 @@
+@import url(menu.css);
+@import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --white:rgba(231,240,246,255);
+    --text-color:rgba(120,135,154,255);
+    --shadow:2px 5px 15px rgba(181,190,199,255);
+    --red:rgba(230,89,140,255);
+}
