@@ -36,7 +36,10 @@ ul {
 .menu-sobres {
     height: 37.17719568567026vh;
     width: 100%;
-    background-color: rgba(205,176,254,255);
+    background: rgb(217,186,254);
+    background: linear-gradient(90deg, rgba(217,186,254,1) 30%, rgba(172,151,253,1) 70%);
+    animation: degradado 3s ease infinite;
+    background-size: 250% 250%;
     padding: 0.625rem;
     border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
     box-shadow: var(--shadow);
@@ -133,6 +136,7 @@ span{
     align-items: center;
     gap: 10vh;
     margin: 1vh;
+    animation: sobres 7s ease-in-out infinite;
 }
 .sobre {
     flex: 1;
@@ -140,6 +144,7 @@ span{
     height: 90%;
     object-fit: cover; 
     filter: drop-shadow(8px 6px 3px rgba(75, 75, 75, 0.400));
+    animation: sobres 7s ease-in-out infinite;
 }
 .menu {
     display: flex;
@@ -160,7 +165,10 @@ span{
     padding-top: 0.625rem;
     position: relative;
     z-index: 1;
-    background-color: rgba(244,220,204,255);
+    background: rgb(249,248,236);
+    background: linear-gradient(90deg, rgba(248,242,229,255) 30%, rgba(243,219,203,1) 70%);
+    animation: degradado 3s ease infinite;
+    background-size: 250% 250%;
     border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -218,7 +226,10 @@ span{
     overflow: hidden;
     height: 100%;
     width: 48%;
-    background-color: rgba(204,220,239,255);
+    background: rgb(237,236,246);
+    background: linear-gradient(90deg, rgba(229,232,244,255) 30%, rgba(201,219,238,1) 60%);
+    animation: degradado 3s ease infinite;
+    background-size: 250% 250%;
     border-radius: 1.25rem 0.313rem 1.25rem 0.313rem;
     box-shadow: var(--shadow);
 }

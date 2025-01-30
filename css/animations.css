@@ -1,0 +1,30 @@
+@keyframes degradado {
+    0% {
+      background-position: 20% 70%;
+}
+    
+    50% {
+    background-position: 70% 20%;
+}
+100% {
+    background-position: 20% 70%;
+}
+}
+
+@keyframes sobres {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(20deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    75% {
+        transform: rotateY(-20deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
